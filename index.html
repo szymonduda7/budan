@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Budan – Zarządzanie Procesem Budowy | Kamień Pomorski i okolice</title>
+<meta name="description" content="Budan – budowa domów jednorodzinnych do stanu deweloperskiego. Jeden kontakt, jasny harmonogram i rozliczenia etapowe. Kamień Pomorski, Gryfice, Świnoujście, Goleniów.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+<link rel="stylesheet" href="styles.css">
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          ink: '#1c1f24',
+          'ink-soft': '#4b525a',
+          paper: '#edeef0',
+          'paper-raised': '#f7f8f9',
+          charcoal: '#14171b',
+          'charcoal-raised': '#1e2227',
+          orange: '#c9641f',
+          'orange-dark': '#9f4f19',
+          'orange-bright': '#ed7d31',
+          steel: '#6b7580',
+          'steel-light': '#a7b0ba',
+        },
+        fontFamily: {
+          display: ['"Big Shoulders Display"', 'sans-serif'],
+          sans: ['"Inter"', 'sans-serif'],
+          mono: ['"Inter"', 'sans-serif'],
+        },
+      },
+    },
+  };
+</script>
+</head>
+<body class="bg-paper text-ink">
+
+<!-- ============ HEADER ============ -->
+<header id="site-header" class="site-header fixed top-0 left-0 right-0 z-50">
+  <div class="max-w-7xl mx-auto px-5 md:px-8 h-16 md:h-20 flex items-center justify-between">
+    <a href="index.html" class="flex items-center group">
+      <img src="images/logo.webp" alt="Budan – zarządzanie procesem budowy" class="brand-logo">
+    </a>
+    <nav class="hidden md:flex items-center gap-8 font-mono text-sm uppercase tracking-wide">
+      <a href="uslugi.html" class="nav-link">Usługi</a>
+      <a href="#realizacje" class="nav-link">Realizacje</a>
+      <a href="#opinie" class="nav-link">Opinie</a>
+      <a href="#kontakt" class="nav-link">Kontakt</a>
+    </nav>
+    <a href="tel:505320707" class="btn btn-primary rounded-full px-5 py-2.5 text-sm font-mono">
+      <i data-lucide="phone" class="w-4 h-4"></i>
+      505 320 707
+    </a>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="relative min-h-[100svh] flex items-end overflow-hidden bg-charcoal">
+  <img src="images/15.webp" alt="Domy jednorodzinne w trakcie budowy więźby dachowej o zachodzie słońca" class="absolute inset-0 w-full h-full object-cover">
+  <div class="absolute inset-0 hero-scrim"></div>
+  <div class="grain"></div>
+
+  <div class="relative max-w-7xl mx-auto w-full px-5 md:px-8 pb-24 md:pb-36 pt-32">
+    <div class="max-w-3xl">
+      <h1 class="font-display font-black uppercase text-paper-raised leading-[0.92] tracking-tight text-[3.2rem] sm:text-7xl md:text-8xl">
+        Budowa domu.<br><span class="text-orange-bright">Bez chaosu.</span>
+      </h1>
+      <p class="mt-6 text-lg md:text-xl text-steel-light max-w-xl leading-relaxed">
+        Prowadzimy budowę domów jednorodzinnych do stanu deweloperskiego. Dla inwestorów z projektem i pozwoleniem, którzy chcą przejść przez budowę spokojnie: planujemy etapy, koordynujemy wykonawców i bierzemy pełną odpowiedzialność za proces.
+      </p>
+
+      <div class="mt-9 flex flex-wrap gap-4">
+        <a href="tel:505320707" class="btn btn-primary rounded-full px-7 py-4 text-base">
+          <i data-lucide="phone-call" class="w-5 h-5"></i>
+          Zadzwoń: 505 320 707
+        </a>
+        <a href="#realizacje" class="btn btn-outline rounded-full px-7 py-4 text-base">
+          Zobacz realizacje
+          <i data-lucide="arrow-down-right" class="w-5 h-5"></i>
+        </a>
+      </div>
+
+      <div class="mt-10 flex flex-wrap gap-3 font-mono text-sm">
+        <div class="stat-pill rounded-full px-4 py-2 flex items-center gap-2 text-paper-raised">
+          <span class="stars">★★★★★</span> 5,0 <span class="text-steel-light">(11 opinii)</span>
+        </div>
+        <div class="stat-pill rounded-full px-4 py-2 flex items-center gap-2 text-paper-raised">
+          <i data-lucide="clock" class="w-4 h-4 text-orange-bright"></i> Pon-Pt 7:00-16:00
+        </div>
+        <div class="stat-pill rounded-full px-4 py-2 flex items-center gap-2 text-paper-raised">
+          <i data-lucide="map-pin" class="w-4 h-4 text-orange-bright"></i> Zachodniopomorskie
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <svg class="roofline absolute -bottom-px left-0 text-paper" viewBox="0 0 1200 46" preserveAspectRatio="none" fill="currentColor">
+    <path d="M0,46 L0,30 L100,6 L200,30 L300,10 L400,30 L500,4 L600,30 L700,14 L800,30 L900,8 L1000,30 L1100,16 L1200,30 L1200,46 Z"/>
+  </svg>
+</section>
+
+<!-- ============ WHY US ============ -->
+<section class="relative py-20 md:py-28 px-5 md:px-8 bg-paper">
+  <div class="max-w-7xl mx-auto">
+    <div class="max-w-2xl mb-14">
+      <div class="rule-bar mb-5"></div>
+      <h2 class="font-display font-extrabold uppercase text-4xl md:text-6xl leading-[0.95] tracking-tight">
+        Dlaczego inwestorzy <span class="text-orange">wybierają Budan</span>
+      </h2>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="surface-card rounded-2xl p-8 reveal">
+        <div class="w-12 h-12 rounded-full bg-orange/10 flex items-center justify-center mb-6">
+          <i data-lucide="user-check" class="w-6 h-6 text-orange-dark"></i>
+        </div>
+        <h3 class="font-display font-bold uppercase text-2xl tracking-tight mb-3">Jeden kontakt</h3>
+        <p class="text-ink-soft leading-relaxed">Nie rozpraszasz się między wieloma ekipami. Rozmawiasz z jedną osobą, a my koordynujemy całą resztę procesu budowy.</p>
+      </div>
+      <div class="surface-card rounded-2xl p-8 reveal">
+        <div class="w-12 h-12 rounded-full bg-orange/10 flex items-center justify-center mb-6">
+          <i data-lucide="hand-coins" class="w-6 h-6 text-orange-dark"></i>
+        </div>
+        <h3 class="font-display font-bold uppercase text-2xl tracking-tight mb-3">Przejrzyste rozliczenia</h3>
+        <p class="text-ink-soft leading-relaxed">Ustalony harmonogram płatności etapowych i jasny kosztorys. Wiesz, za co płacisz na każdym etapie budowy.</p>
+      </div>
+      <div class="surface-card rounded-2xl p-8 reveal">
+        <div class="w-12 h-12 rounded-full bg-orange/10 flex items-center justify-center mb-6">
+          <i data-lucide="badge-check" class="w-6 h-6 text-orange-dark"></i>
+        </div>
+        <h3 class="font-display font-bold uppercase text-2xl tracking-tight mb-3">Firma sprawdzona w GUS</h3>
+        <p class="text-ink-soft leading-relaxed">Zarejestrowana działalność budowlana, potwierdzona historia realizacji i opinie inwestorów, którzy budowę mają już za sobą.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section id="uslugi" class="relative pt-20 pb-28 md:pt-28 md:pb-40 px-5 md:px-8 bg-charcoal dark-radials overflow-hidden">
+  <div class="grain"></div>
+  <div class="relative max-w-7xl mx-auto">
+    <div class="flex flex-wrap items-end justify-between gap-6 mb-14">
+      <div class="max-w-2xl">
+        <div class="rule-bar mb-5"></div>
+        <h2 class="font-display font-extrabold uppercase text-4xl md:text-6xl leading-[0.95] tracking-tight text-paper-raised">
+          Usługi <span class="text-orange-bright">ogólnobudowlane</span>
+        </h2>
+      </div>
+      <a href="uslugi.html" class="btn btn-outline rounded-full px-6 py-3.5 text-sm font-mono uppercase tracking-wide shrink-0">
+        Wszystkie usługi
+        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+      </a>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div class="dark-card rounded-2xl p-7 reveal">
+        <i data-lucide="clipboard-list" class="w-7 h-7 text-orange-bright mb-5"></i>
+        <h3 class="font-display font-bold uppercase text-xl tracking-tight text-paper-raised mb-2">Zarządzanie procesem budowy</h3>
+        <p class="text-steel-light text-sm leading-relaxed">Planujemy etapy, koordynujemy wykonawców i pilnujemy terminów od pierwszego wykopu po odbiór.</p>
+      </div>
+      <div class="dark-card rounded-2xl p-7 reveal">
+        <i data-lucide="layers" class="w-7 h-7 text-orange-bright mb-5"></i>
+        <h3 class="font-display font-bold uppercase text-xl tracking-tight text-paper-raised mb-2">Fundamenty i ławy fundamentowe</h3>
+        <p class="text-steel-light text-sm leading-relaxed">Wykonujemy fundamenty dopasowane do projektu i warunków gruntowych na działce.</p>
+      </div>
+      <div class="dark-card rounded-2xl p-7 reveal">
+        <i data-lucide="building-2" class="w-7 h-7 text-orange-bright mb-5"></i>
+        <h3 class="font-display font-bold uppercase text-xl tracking-tight text-paper-raised mb-2">Budowa w technologii murowanej</h3>
+        <p class="text-steel-light text-sm leading-relaxed">Stawiamy ściany i stropy w sprawdzonej technologii murowanej, zgodnie z projektem budowlanym.</p>
+      </div>
+      <div class="dark-card rounded-2xl p-7 reveal">
+        <i data-lucide="home" class="w-7 h-7 text-orange-bright mb-5"></i>
+        <h3 class="font-display font-bold uppercase text-xl tracking-tight text-paper-raised mb-2">Więźba i pokrycie dachu</h3>
+        <p class="text-steel-light text-sm leading-relaxed">Konstrukcja dachu i pokrycie wykonane solidnie, gotowe na kolejne etapy budowy.</p>
+      </div>
+      <div class="dark-card rounded-2xl p-7 reveal">
+        <i data-lucide="door-closed" class="w-7 h-7 text-orange-bright mb-5"></i>
+        <h3 class="font-display font-bold uppercase text-xl tracking-tight text-paper-raised mb-2">Stan surowy zamknięty</h3>
+        <p class="text-steel-light text-sm leading-relaxed">Montujemy okna, drzwi i bramę garażową, zamykając budynek przed kolejnym sezonem.</p>
+      </div>
+      <div class="dark-card rounded-2xl p-7 reveal">
+        <i data-lucide="clipboard-check" class="w-7 h-7 text-orange-bright mb-5"></i>
+        <h3 class="font-display font-bold uppercase text-xl tracking-tight text-paper-raised mb-2">Stan deweloperski i odbiór</h3>
+        <p class="text-steel-light text-sm leading-relaxed">Kończymy budowę do stanu deweloperskiego i przekazujemy dom gotowy do wykończenia wnętrz.</p>
+      </div>
+    </div>
+  </div>
+
+  <svg class="roofline absolute -bottom-px left-0 text-paper" viewBox="0 0 1200 46" preserveAspectRatio="none" fill="currentColor">
+    <path d="M0,46 L0,30 L100,6 L200,30 L300,10 L400,30 L500,4 L600,30 L700,14 L800,30 L900,8 L1000,30 L1100,16 L1200,30 L1200,46 Z"/>
+  </svg>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section id="realizacje" class="py-20 md:py-28 px-5 md:px-8 bg-paper">
+  <div class="max-w-7xl mx-auto">
+    <div class="max-w-2xl mb-14">
+      <div class="rule-bar mb-5"></div>
+      <h2 class="font-display font-extrabold uppercase text-4xl md:text-6xl leading-[0.95] tracking-tight">
+        Realizacje <span class="text-orange">z zachodniopomorskiego</span>
+      </h2>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 auto-rows-[160px] md:auto-rows-[220px]">
+      <button class="gallery-item rounded-xl row-span-2 col-span-1" data-full="images/28.webp" data-caption="Wylewanie ław fundamentowych pod dom jednorodzinny">
+        <img src="images/28.webp" alt="Wylewanie ław fundamentowych pod dom jednorodzinny" class="w-full h-full object-cover rounded-xl">
+        <span class="gallery-caption absolute bottom-3 left-3 right-3 text-paper-raised text-xs font-mono uppercase">Fundamenty</span>
+      </button>
+      <button class="gallery-item rounded-xl" data-full="images/6.webp" data-caption="Murowanie ścian w technologii murowanej">
+        <img src="images/6.webp" alt="Murowanie ścian w technologii murowanej" class="w-full h-full object-cover rounded-xl">
+        <span class="gallery-caption absolute bottom-3 left-3 right-3 text-paper-raised text-xs font-mono uppercase">Ściany murowane</span>
+      </button>
+      <button class="gallery-item rounded-xl" data-full="images/7.webp" data-caption="Dostawa i rozładunek materiałów na placu budowy">
+        <img src="images/7.webp" alt="Dostawa materiałów budowlanych na plac budowy" class="w-full h-full object-cover rounded-xl">
+        <span class="gallery-caption absolute bottom-3 left-3 right-3 text-paper-raised text-xs font-mono uppercase">Dostawa materiałów</span>
+      </button>
+      <button class="gallery-item rounded-xl row-span-2" data-full="images/25.webp" data-caption="Konstrukcja więźby dachowej domu jednorodzinnego">
+        <img src="images/25.webp" alt="Konstrukcja więźby dachowej domu jednorodzinnego" class="w-full h-full object-cover rounded-xl">
+        <span class="gallery-caption absolute bottom-3 left-3 right-3 text-paper-raised text-xs font-mono uppercase">Więźba dachowa</span>
+      </button>
+      <button class="gallery-item rounded-xl" data-full="images/8.webp" data-caption="Dom w stanie surowym zamkniętym z gotowym pokryciem dachu">
+        <img src="images/8.webp" alt="Dom w stanie surowym zamkniętym z gotowym pokryciem dachu" class="w-full h-full object-cover rounded-xl">
+        <span class="gallery-caption absolute bottom-3 left-3 right-3 text-paper-raised text-xs font-mono uppercase">Stan surowy zamknięty</span>
+      </button>
+      <button class="gallery-item rounded-xl" data-full="images/17.webp" data-caption="Gotowe pokrycie dachowe z oknem połaciowym">
+        <img src="images/17.webp" alt="Gotowe pokrycie dachowe z oknem połaciowym" class="w-full h-full object-cover rounded-xl">
+        <span class="gallery-caption absolute bottom-3 left-3 right-3 text-paper-raised text-xs font-mono uppercase">Pokrycie dachowe</span>
+      </button>
+      <button class="gallery-item rounded-xl" data-full="images/19.webp" data-caption="Budynek wykończony do stanu deweloperskiego">
+        <img src="images/19.webp" alt="Budynek wykończony do stanu deweloperskiego" class="w-full h-full object-cover rounded-xl">
+        <span class="gallery-caption absolute bottom-3 left-3 right-3 text-paper-raised text-xs font-mono uppercase">Stan deweloperski</span>
+      </button>
+      <button class="gallery-item rounded-xl" data-full="images/22.webp" data-caption="Izolacja i wykonanie fundamentów pod budowę domu">
+        <img src="images/22.webp" alt="Izolacja i wykonanie fundamentów pod budowę domu" class="w-full h-full object-cover rounded-xl">
+        <span class="gallery-caption absolute bottom-3 left-3 right-3 text-paper-raised text-xs font-mono uppercase">Izolacja fundamentów</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section id="opinie" class="relative py-20 md:py-28 px-5 md:px-8 bg-charcoal dark-radials overflow-hidden">
+  <div class="grain"></div>
+  <div class="relative max-w-7xl mx-auto">
+    <div class="flex flex-wrap items-end justify-between gap-8 mb-14">
+      <div class="max-w-2xl">
+        <div class="rule-bar mb-5"></div>
+        <h2 class="font-display font-extrabold uppercase text-4xl md:text-6xl leading-[0.95] tracking-tight text-paper-raised">
+          Co mówią <span class="text-orange-bright">inwestorzy</span>
+        </h2>
+      </div>
+      <div class="stat-pill rounded-2xl px-6 py-4 flex items-center gap-4">
+        <span class="font-display font-black text-5xl text-paper-raised leading-none">5,0</span>
+        <div>
+          <div class="stars text-lg leading-none mb-1">★★★★★</div>
+          <div class="font-mono text-xs text-steel-light uppercase tracking-wide">11 opinii Google</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+      <figure class="dark-card rounded-2xl p-7 reveal flex flex-col">
+        <div class="stars mb-4">★★★★★</div>
+        <blockquote class="text-paper-raised leading-relaxed text-sm flex-1">"Z całego serca dziękujemy firmie Budan za profesjonalną i fachową realizację budowy naszego domu. Doceniamy rzetelność, terminowość oraz dbałość o najwyższą jakość wykonanych prac."</blockquote>
+        <figcaption class="mt-5 font-mono text-xs text-steel-light uppercase tracking-wide">Gosia W. · 11 miesięcy temu</figcaption>
+      </figure>
+      <figure class="dark-card rounded-2xl p-7 reveal flex flex-col">
+        <div class="stars mb-4">★★★★★</div>
+        <blockquote class="text-paper-raised leading-relaxed text-sm flex-1">"Z czystym sercem polecam ekipę budowlaną firmy Budan. Wszystko zgodnie z projektem budowlanym, ściany idealnie proste. Plac budowy pozostawiony czysty."</blockquote>
+        <figcaption class="mt-5 font-mono text-xs text-steel-light uppercase tracking-wide">Sandra K. · 9 miesięcy temu</figcaption>
+      </figure>
+      <figure class="dark-card rounded-2xl p-7 reveal flex flex-col">
+        <div class="stars mb-4">★★★★★</div>
+        <blockquote class="text-paper-raised leading-relaxed text-sm flex-1">"Solidna firma, czyste chłopaki zawsze w kontakcie, zdecydowanie polecam. Nawet sąsiedzi mówili, że byli pod wrażeniem ich pracy."</blockquote>
+        <figcaption class="mt-5 font-mono text-xs text-steel-light uppercase tracking-wide">Sebastian K. · 9 miesięcy temu</figcaption>
+      </figure>
+      <figure class="dark-card rounded-2xl p-7 reveal flex flex-col">
+        <div class="stars mb-4">★★★★★</div>
+        <blockquote class="text-paper-raised leading-relaxed text-sm flex-1">"SSO postawiony bardzo szybko, bez przestojów na budowie. Nie trzeba patrzeć brygadzie na ręce, bo wiedzą co robią. Jesteśmy bardzo zadowoleni!"</blockquote>
+        <figcaption class="mt-5 font-mono text-xs text-steel-light uppercase tracking-wide">Andrzej W. · rok temu</figcaption>
+      </figure>
+      <figure class="dark-card rounded-2xl p-7 reveal flex flex-col">
+        <div class="stars mb-4">★★★★★</div>
+        <blockquote class="text-paper-raised leading-relaxed text-sm flex-1">"Z czystym sumieniem polecam. Profesjonalna i uczciwa robota, bardzo dobry kontakt z wykonawcą. Budynek stoi już ponad rok, a ja nadal zadowolony."</blockquote>
+        <figcaption class="mt-5 font-mono text-xs text-steel-light uppercase tracking-wide">Ray B. · 3 lata temu</figcaption>
+      </figure>
+      <figure class="dark-card rounded-2xl p-7 reveal flex flex-col">
+        <div class="stars mb-4">★★★★★</div>
+        <blockquote class="text-paper-raised leading-relaxed text-sm flex-1">"Wysoka jakość wykonania, szybkie terminy realizacji, polecam tego wykonawcę!"</blockquote>
+        <figcaption class="mt-5 font-mono text-xs text-steel-light uppercase tracking-wide">Katarzyna S. · 3 lata temu</figcaption>
+      </figure>
+      <figure class="dark-card rounded-2xl p-7 reveal flex flex-col">
+        <div class="stars mb-4">★★★★★</div>
+        <blockquote class="text-paper-raised leading-relaxed text-sm flex-1">"Świetny majster, słowny, potrafi doradzić, polecam."</blockquote>
+        <figcaption class="mt-5 font-mono text-xs text-steel-light uppercase tracking-wide">Adrian G. · 3 lata temu</figcaption>
+      </figure>
+      <figure class="dark-card rounded-2xl p-7 reveal flex flex-col">
+        <div class="stars mb-4">★★★★★</div>
+        <blockquote class="text-paper-raised leading-relaxed text-sm flex-1">"Bardzo polecam. Wszystko zrealizowane zgodnie z ustaleniami, bez żadnych problemów."</blockquote>
+        <figcaption class="mt-5 font-mono text-xs text-steel-light uppercase tracking-wide">Patrycja P. · 3 lata temu</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="kontakt" class="py-20 md:py-28 px-5 md:px-8 bg-paper">
+  <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12">
+    <div>
+      <div class="rule-bar mb-5"></div>
+      <h2 class="font-display font-extrabold uppercase text-4xl md:text-6xl leading-[0.95] tracking-tight mb-6">
+        Umówmy <span class="text-orange">rozmowę</span>
+      </h2>
+      <p class="text-ink-soft text-lg leading-relaxed max-w-lg mb-10">
+        Zadzwoń i opowiedz o swojej działce oraz projekcie. Ustalimy zakres prac, wstępny harmonogram i koszt budowy.
+      </p>
+
+      <div class="space-y-5">
+        <a href="tel:505320707" class="flex items-center gap-4 surface-card rounded-2xl p-5 group">
+          <div class="w-12 h-12 rounded-full bg-orange/10 flex items-center justify-center shrink-0">
+            <i data-lucide="phone" class="w-5 h-5 text-orange-dark"></i>
+          </div>
+          <div>
+            <div class="font-mono text-xs uppercase tracking-wide text-ink-soft mb-1">Telefon</div>
+            <div class="font-display font-bold text-2xl tracking-tight">505 320 707</div>
+          </div>
+        </a>
+        <div class="flex items-center gap-4 surface-card rounded-2xl p-5">
+          <div class="w-12 h-12 rounded-full bg-orange/10 flex items-center justify-center shrink-0">
+            <i data-lucide="map-pin" class="w-5 h-5 text-orange-dark"></i>
+          </div>
+          <div>
+            <div class="font-mono text-xs uppercase tracking-wide text-ink-soft mb-1">Adres</div>
+            <div class="font-display font-bold text-xl tracking-tight">Mokrawica 13, 72-400 Kamień Pomorski</div>
+          </div>
+        </div>
+        <div class="flex items-center gap-4 surface-card rounded-2xl p-5">
+          <div class="w-12 h-12 rounded-full bg-orange/10 flex items-center justify-center shrink-0">
+            <i data-lucide="clock" class="w-5 h-5 text-orange-dark"></i>
+          </div>
+          <div>
+            <div class="font-mono text-xs uppercase tracking-wide text-ink-soft mb-1">Godziny</div>
+            <div class="font-display font-bold text-xl tracking-tight">Pon-Pt 7:00-16:00</div>
+          </div>
+        </div>
+        <div class="flex items-center gap-4 surface-card rounded-2xl p-5">
+          <div class="w-12 h-12 rounded-full bg-orange/10 flex items-center justify-center shrink-0">
+            <i data-lucide="map" class="w-5 h-5 text-orange-dark"></i>
+          </div>
+          <div>
+            <div class="font-mono text-xs uppercase tracking-wide text-ink-soft mb-1">Obszar działania</div>
+            <div class="font-display font-bold text-xl tracking-tight">Kamień Pomorski, Gryfice, Świnoujście, Goleniów</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="rounded-2xl overflow-hidden shadow-[0_1px_2px_rgba(28,31,36,0.06),0_8px_20px_-8px_rgba(28,31,36,0.18)] min-h-[420px] border border-black/10">
+      <iframe
+        src="https://www.google.com/maps?q=Mokrawica+13%2C+72-400+Kamie%C5%84+Pomorski&output=embed"
+        class="w-full h-full min-h-[420px]"
+        style="border:0;"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Mapa dojazdu do Budan, Mokrawica 13">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="bg-charcoal px-5 md:px-8 pt-16 pb-8 border-t border-white/10">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid md:grid-cols-3 gap-10 mb-12">
+      <div>
+        <img src="images/logo.webp" alt="Budan – zarządzanie procesem budowy" class="brand-logo mb-4">
+        <p class="text-steel-light text-sm leading-relaxed max-w-xs">Budowa domów jednorodzinnych do stanu deweloperskiego. Zarządzanie procesem budowy od A do Z.</p>
+      </div>
+      <div class="font-mono text-sm">
+        <div class="text-steel-light uppercase tracking-wide text-xs mb-4">Nawigacja</div>
+        <ul class="space-y-2">
+          <li><a href="uslugi.html" class="nav-link">Usługi</a></li>
+          <li><a href="index.html#realizacje" class="nav-link">Realizacje</a></li>
+          <li><a href="index.html#opinie" class="nav-link">Opinie</a></li>
+          <li><a href="index.html#kontakt" class="nav-link">Kontakt</a></li>
+        </ul>
+      </div>
+      <div class="font-mono text-sm">
+        <div class="text-steel-light uppercase tracking-wide text-xs mb-4">Kontakt</div>
+        <ul class="space-y-2 text-paper-raised">
+          <li><a href="tel:505320707" class="nav-link">505 320 707</a></li>
+          <li class="text-steel-light">Mokrawica 13</li>
+          <li class="text-steel-light">72-400 Kamień Pomorski</li>
+        </ul>
+      </div>
+    </div>
+    <div class="pt-8 border-t border-white/10 flex flex-wrap items-center justify-between gap-4 text-xs font-mono text-steel-light">
+      <span>© 2026 Daniel Cichewicz Usługi Ogólnobudowlane Budan. Wszelkie prawa zastrzeżone.</span>
+      <span>NIP 8571882581</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ LIGHTBOX ============ -->
+<div id="lightbox" role="dialog" aria-modal="true" aria-label="Podgląd zdjęcia">
+  <button id="lightbox-close" class="absolute top-6 right-6 text-paper-raised hover:text-orange-bright transition-colors" aria-label="Zamknij podgląd">
+    <i data-lucide="x" class="w-8 h-8"></i>
+  </button>
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+<script>
+  lucide.createIcons();
+
+  const header = document.getElementById('site-header');
+  window.addEventListener('scroll', () => {
+    header.classList.toggle('is-scrolled', window.scrollY > 12);
+  });
+
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  revealEls.forEach(el => io.observe(el));
+
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  document.querySelectorAll('.gallery-item').forEach(item => {
+    item.addEventListener('click', () => {
+      lightboxImg.src = item.dataset.full;
+      lightboxImg.alt = item.dataset.caption || '';
+      lightbox.classList.add('is-open');
+    });
+  });
+  function closeLightbox() {
+    lightbox.classList.remove('is-open');
+    lightboxImg.src = '';
+  }
+  document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
+  lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLightbox(); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLightbox(); });
+</script>
+</body>
+</html>

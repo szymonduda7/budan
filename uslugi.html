@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Usługi | Budan Zarządzanie Procesem Budowy</title>
+<meta name="description" content="Pełny zakres usług Budan: zarządzanie budową, fundamenty, murowanie ścian, więźba i pokrycie dachu, stan surowy zamknięty, elewacja i rozliczenia etapowe. Kamień Pomorski i okolice.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+<link rel="stylesheet" href="styles.css">
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          ink: '#1c1f24',
+          'ink-soft': '#4b525a',
+          paper: '#edeef0',
+          'paper-raised': '#f7f8f9',
+          charcoal: '#14171b',
+          'charcoal-raised': '#1e2227',
+          orange: '#c9641f',
+          'orange-dark': '#9f4f19',
+          'orange-bright': '#ed7d31',
+          steel: '#6b7580',
+          'steel-light': '#a7b0ba',
+        },
+        fontFamily: {
+          display: ['"Big Shoulders Display"', 'sans-serif'],
+          sans: ['"Inter"', 'sans-serif'],
+          mono: ['"Inter"', 'sans-serif'],
+        },
+      },
+    },
+  };
+</script>
+</head>
+<body class="bg-paper text-ink">
+
+<!-- ============ HEADER ============ -->
+<header id="site-header" class="site-header fixed top-0 left-0 right-0 z-50 is-scrolled">
+  <div class="max-w-7xl mx-auto px-5 md:px-8 h-16 md:h-20 flex items-center justify-between">
+    <a href="index.html" class="flex items-center group">
+      <img src="images/logo.webp" alt="Budan – zarządzanie procesem budowy" class="brand-logo">
+    </a>
+    <nav class="hidden md:flex items-center gap-8 font-mono text-sm uppercase tracking-wide">
+      <a href="uslugi.html" class="nav-link text-paper-raised">Usługi</a>
+      <a href="index.html#realizacje" class="nav-link">Realizacje</a>
+      <a href="index.html#opinie" class="nav-link">Opinie</a>
+      <a href="index.html#kontakt" class="nav-link">Kontakt</a>
+    </nav>
+    <a href="tel:505320707" class="btn btn-primary rounded-full px-5 py-2.5 text-sm font-mono">
+      <i data-lucide="phone" class="w-4 h-4"></i>
+      505 320 707
+    </a>
+  </div>
+</header>
+
+<!-- ============ PAGE HERO ============ -->
+<section class="relative bg-charcoal dark-radials overflow-hidden pt-32 pb-28 md:pt-40 md:pb-36 px-5 md:px-8">
+  <div class="grain"></div>
+  <div class="relative max-w-7xl mx-auto">
+    <a href="index.html" class="inline-flex items-center gap-2 text-steel-light hover:text-orange-bright transition-colors font-mono text-sm uppercase tracking-wide mb-8">
+      <i data-lucide="arrow-left" class="w-4 h-4"></i>
+      Strona główna
+    </a>
+    <div class="rule-bar mb-5"></div>
+    <h1 class="font-display font-black uppercase text-paper-raised leading-[0.92] tracking-tight text-5xl sm:text-7xl md:text-8xl max-w-4xl">
+      Budowa domu <span class="text-orange-bright">krok po kroku</span>
+    </h1>
+    <p class="mt-6 text-lg md:text-xl text-steel-light max-w-2xl leading-relaxed">
+      Dziesięć obszarów zarządzania budową w jednych rękach. Od fundamentów po stan deweloperski, wszystko koordynowane przez tego samego wykonawcę od początku do końca.
+    </p>
+  </div>
+  <svg class="roofline absolute -bottom-px left-0 text-paper" viewBox="0 0 1200 46" preserveAspectRatio="none" fill="currentColor">
+    <path d="M0,46 L0,30 L100,6 L200,30 L300,10 L400,30 L500,4 L600,30 L700,14 L800,30 L900,8 L1000,30 L1100,16 L1200,30 L1200,46 Z"/>
+  </svg>
+</section>
+
+<!-- ============ SERVICE CARDS ============ -->
+<section class="py-20 md:py-24 px-5 md:px-8 bg-paper">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <article class="surface-card rounded-2xl p-8 reveal">
+        <div class="w-14 h-14 rounded-full bg-orange/10 flex items-center justify-center mb-6">
+          <i data-lucide="clipboard-list" class="w-7 h-7 text-orange-dark"></i>
+        </div>
+        <h2 class="font-display font-bold uppercase text-2xl tracking-tight mb-3">Zarządzanie procesem budowy</h2>
+        <p class="text-ink-soft leading-relaxed">Planujemy harmonogram, koordynujemy ekipy i dostawy materiałów oraz pilnujemy terminów na każdym etapie budowy domu.</p>
+      </article>
+
+      <article class="surface-card rounded-2xl p-8 reveal">
+        <div class="w-14 h-14 rounded-full bg-orange/10 flex items-center justify-center mb-6">
+          <i data-lucide="layers" class="w-7 h-7 text-orange-dark"></i>
+        </div>
+        <h2 class="font-display font-bold uppercase text-2xl tracking-tight mb-3">Fundamenty i ławy fundamentowe</h2>
+        <p class="text-ink-soft leading-relaxed">Wykonujemy wykopy, zbrojenie i wylewkę fundamentów dopasowaną do projektu budowlanego i warunków gruntowych działki.</p>
+      </article>
+
+      <article class="surface-card rounded-2xl p-8 reveal">
+        <div class="w-14 h-14 rounded-full bg-orange/10 flex items-center justify-center mb-6">
+          <i data-lucide="building-2" class="w-7 h-7 text-orange-dark"></i>
+        </div>
+        <h2 class="font-display font-bold uppercase text-2xl tracking-tight mb-3">Budowa w technologii murowanej</h2>
+        <p class="text-ink-soft leading-relaxed">Stawiamy ściany nośne, działowe i stropy w sprawdzonej technologii murowanej, zgodnie z projektem i sztuką budowlaną.</p>
+      </article>
+
+      <article class="surface-card rounded-2xl p-8 reveal">
+        <div class="w-14 h-14 rounded-full bg-orange/10 flex items-center justify-center mb-6">
+          <i data-lucide="home" class="w-7 h-7 text-orange-dark"></i>
+        </div>
+        <h2 class="font-display font-bold uppercase text-2xl tracking-tight mb-3">Więźba dachowa i pokrycie dachu</h2>
+        <p class="text-ink-soft leading-relaxed">Montujemy konstrukcję dachu, łacenie i pokrycie, zamykając bryłę budynku przed kolejnymi etapami prac.</p>
+      </article>
+
+      <article class="surface-card rounded-2xl p-8 reveal">
+        <div class="w-14 h-14 rounded-full bg-orange/10 flex items-center justify-center mb-6">
+          <i data-lucide="door-closed" class="w-7 h-7 text-orange-dark"></i>
+        </div>
+        <h2 class="font-display font-bold uppercase text-2xl tracking-tight mb-3">Stan surowy zamknięty</h2>
+        <p class="text-ink-soft leading-relaxed">Montujemy stolarkę okienną i drzwiową oraz bramę garażową, doprowadzając budynek do pełnej szczelności.</p>
+      </article>
+
+      <article class="surface-card rounded-2xl p-8 reveal">
+        <div class="w-14 h-14 rounded-full bg-orange/10 flex items-center justify-center mb-6">
+          <i data-lucide="plug-zap" class="w-7 h-7 text-orange-dark"></i>
+        </div>
+        <h2 class="font-display font-bold uppercase text-2xl tracking-tight mb-3">Koordynacja instalacji wewnętrznych</h2>
+        <p class="text-ink-soft leading-relaxed">Koordynujemy prace elektryczne, hydrauliczne i grzewcze, pilnując, żeby instalacje były gotowe pod kolejne etapy wykończenia.</p>
+      </article>
+
+      <article class="surface-card rounded-2xl p-8 reveal">
+        <div class="w-14 h-14 rounded-full bg-orange/10 flex items-center justify-center mb-6">
+          <i data-lucide="paint-roller" class="w-7 h-7 text-orange-dark"></i>
+        </div>
+        <h2 class="font-display font-bold uppercase text-2xl tracking-tight mb-3">Elewacja i docieplenie</h2>
+        <p class="text-ink-soft leading-relaxed">Ocieplamy i wykańczamy elewację budynku, zabezpieczając ściany przed warunkami atmosferycznymi na lata.</p>
+      </article>
+
+      <article class="surface-card rounded-2xl p-8 reveal">
+        <div class="w-14 h-14 rounded-full bg-orange/10 flex items-center justify-center mb-6">
+          <i data-lucide="wallet" class="w-7 h-7 text-orange-dark"></i>
+        </div>
+        <h2 class="font-display font-bold uppercase text-2xl tracking-tight mb-3">Rozliczenia etapowe i budżet</h2>
+        <p class="text-ink-soft leading-relaxed">Prowadzimy jasny kosztorys i rozliczenia etapowe, dzięki czemu wiesz, za co płacisz na każdym etapie budowy.</p>
+      </article>
+
+      <article class="surface-card rounded-2xl p-8 reveal">
+        <div class="w-14 h-14 rounded-full bg-orange/10 flex items-center justify-center mb-6">
+          <i data-lucide="clipboard-check" class="w-7 h-7 text-orange-dark"></i>
+        </div>
+        <h2 class="font-display font-bold uppercase text-2xl tracking-tight mb-3">Kontrola jakości i odbiory</h2>
+        <p class="text-ink-soft leading-relaxed">Sprawdzamy jakość wykonanych prac na każdym etapie i przeprowadzamy odbiory przed przejściem do kolejnej fazy budowy.</p>
+      </article>
+
+      <article class="surface-card rounded-2xl p-8 reveal">
+        <div class="w-14 h-14 rounded-full bg-orange/10 flex items-center justify-center mb-6">
+          <i data-lucide="compass" class="w-7 h-7 text-orange-dark"></i>
+        </div>
+        <h2 class="font-display font-bold uppercase text-2xl tracking-tight mb-3">Doradztwo na etapie projektu</h2>
+        <p class="text-ink-soft leading-relaxed">Doradzamy przy wyborze rozwiązań technologicznych, gdy masz już projekt i pozwolenie, a budowa dopiero się zaczyna.</p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="relative py-20 px-5 md:px-8 bg-charcoal dark-radials overflow-hidden">
+  <div class="grain"></div>
+  <div class="relative max-w-3xl mx-auto text-center">
+    <h2 class="font-display font-extrabold uppercase text-4xl md:text-5xl leading-[0.95] tracking-tight text-paper-raised mb-5">
+      Nie widzisz swojego etapu?
+    </h2>
+    <p class="text-steel-light text-lg leading-relaxed mb-9 max-w-xl mx-auto">
+      Zadzwoń i opisz zakres inwestycji. Doradzimy, jak zaplanować budowę i pomożemy dobrać zakres usług.
+    </p>
+    <a href="tel:505320707" class="btn btn-primary rounded-full px-8 py-4 text-base inline-flex">
+      <i data-lucide="phone-call" class="w-5 h-5"></i>
+      Zadzwoń: 505 320 707
+    </a>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="bg-charcoal px-5 md:px-8 pt-16 pb-8 border-t border-white/10">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid md:grid-cols-3 gap-10 mb-12">
+      <div>
+        <img src="images/logo.webp" alt="Budan – zarządzanie procesem budowy" class="brand-logo mb-4">
+        <p class="text-steel-light text-sm leading-relaxed max-w-xs">Budowa domów jednorodzinnych do stanu deweloperskiego. Zarządzanie procesem budowy od A do Z.</p>
+      </div>
+      <div class="font-mono text-sm">
+        <div class="text-steel-light uppercase tracking-wide text-xs mb-4">Nawigacja</div>
+        <ul class="space-y-2">
+          <li><a href="uslugi.html" class="nav-link">Usługi</a></li>
+          <li><a href="index.html#realizacje" class="nav-link">Realizacje</a></li>
+          <li><a href="index.html#opinie" class="nav-link">Opinie</a></li>
+          <li><a href="index.html#kontakt" class="nav-link">Kontakt</a></li>
+        </ul>
+      </div>
+      <div class="font-mono text-sm">
+        <div class="text-steel-light uppercase tracking-wide text-xs mb-4">Kontakt</div>
+        <ul class="space-y-2 text-paper-raised">
+          <li><a href="tel:505320707" class="nav-link">505 320 707</a></li>
+          <li class="text-steel-light">Mokrawica 13</li>
+          <li class="text-steel-light">72-400 Kamień Pomorski</li>
+        </ul>
+      </div>
+    </div>
+    <div class="pt-8 border-t border-white/10 flex flex-wrap items-center justify-between gap-4 text-xs font-mono text-steel-light">
+      <span>© 2026 Daniel Cichewicz Usługi Ogólnobudowlane Budan. Wszelkie prawa zastrzeżone.</span>
+      <span>NIP 8571882581</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  lucide.createIcons();
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  revealEls.forEach(el => io.observe(el));
+</script>
+</body>
+</html>
